@@ -14,21 +14,21 @@
 @import "./fundamental/header.scss";
 @import "./fundamental/footer.scss";
 
-/* Блоки */
-@import "./blocks/button.scss";
-@import "./blocks/input.scss";
-@import "./blocks/textarea.scss";
-@import "./blocks/checkbox.scss";
-@import "./blocks/img.scss";
-@import "./blocks/title.scss";
-@import "./blocks/icon.scss";
-@import "./blocks/link.scss";
-@import "./blocks/deco.scss";
-@import "./blocks/text.scss";
-@import "./blocks/relative-box.scss";
+/* Кит */
+@import "./kit/button.scss";
+@import "./kit/input.scss";
+@import "./kit/textarea.scss";
+@import "./kit/checkbox.scss";
+@import "./kit/img.scss";
+@import "./kit/title.scss";
+@import "./kit/icon.scss";
+@import "./kit/link.scss";
+@import "./kit/deco.scss";
+@import "./kit/text.scss";
+@import "./kit/relative-box.scss";
 
 /* Блоки Верстки */
-@import "./logo.scss";
+@import "./custom/logo.scss";
 
 /* Навигация */
 * {

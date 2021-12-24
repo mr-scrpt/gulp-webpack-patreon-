@@ -8,7 +8,3 @@ export const data = {
 	phone: JSON.parse(readFileSync(`${srcFolder}/data/phone.json`, "utf8")),
 	social: JSON.parse(readFileSync(`${srcFolder}/data/social.json`, "utf8")),
 };
-
-/*export const data = (path) => ({
-	menu: JSON.parse(readFileSync(`${path.srcFolder}/data/menu.json`, "utf8")),
-});*/
