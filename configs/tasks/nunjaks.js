@@ -3,9 +3,6 @@ import webpHtmlNosvg from "gulp-webp-html-nosvg";
 import versionNumber from "gulp-version-number";
 import nunjucksRender from "gulp-nunjucks-render";
 import gulpData from "gulp-data";
-/*const { data } = require("../data/index");*/
-import { data } from "../../src/data/index.js";
-//import pug from "gulp-pug";
 
 export const nunjaks = () => {
 	return app.gulp
@@ -20,7 +17,7 @@ export const nunjaks = () => {
 		)
 		.pipe(fileInclude())
 
-		.pipe(gulpData(() => data))
+		.pipe(gulpData(() => app.data))
 		.pipe(
 			nunjucksRender({
 				path: ["src/views"],
@@ -39,7 +36,7 @@ export const nunjaks = () => {
 						to: ["css", "js"],
 					},
 					output: {
-						file: "gulp/version.json",
+						file: "configs/version.json",
 					},
 				})
 			)

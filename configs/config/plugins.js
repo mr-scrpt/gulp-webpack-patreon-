@@ -8,7 +8,7 @@ import ifCustom from "gulp-if"; // Условное ветвление
 // Экспортируем объект
 export const plugins = {
 	replace,
-	plumber: plumber,
+	plumber,
 	notify,
 	browsersync,
 	newer,

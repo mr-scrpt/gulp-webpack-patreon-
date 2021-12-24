@@ -1,10 +1,12 @@
 // Основной модуль
 import gulp from "gulp";
 // Импорт путей
-import { path } from "./gulp/config/path.js";
+import { path } from "./configs/config/path.js";
 // Импорт общих плагинов
-import { plugins } from "./gulp/config/plugins.js";
+import { plugins } from "./configs/config/plugins.js";
 
+import { data } from "./src/data/index.js";
+/*import "./src/data";*/
 // Передаем значения в глобальную переменную
 global.app = {
 	isBuild: process.argv.includes("--build"),
@@ -12,20 +14,21 @@ global.app = {
 	path,
 	gulp,
 	plugins,
+	data,
 };
 
 // Импорт задач
-import { copy } from "./gulp/tasks/copy.js";
-import { reset } from "./gulp/tasks/reset.js";
-import { nunjaks } from "./gulp/tasks/nunjaks.js";
-import { server } from "./gulp/tasks/server.js";
-import { scss } from "./gulp/tasks/scss.js";
-import { js } from "./gulp/tasks/js.js";
-import { images } from "./gulp/tasks/images.js";
-import { otfToTtf, ttfToWoff, fontsStyle } from "./gulp/tasks/fonts.js";
-import { svgSprive } from "./gulp/tasks/svgSprive.js";
-import { zip } from "./gulp/tasks/zip.js";
-import { ftp } from "./gulp/tasks/ftp.js";
+import { copy } from "./configs/tasks/copy.js";
+import { reset } from "./configs/tasks/reset.js";
+import { nunjaks } from "./configs/tasks/nunjaks.js";
+import { server } from "./configs/tasks/server.js";
+import { scss } from "./configs/tasks/scss.js";
+import { js } from "./configs/tasks/js.js";
+import { images } from "./configs/tasks/images.js";
+import { otfToTtf, ttfToWoff, fontsStyle } from "./configs/tasks/fonts.js";
+import { svgSprive } from "./configs/tasks/svgSprive.js";
+import { zip } from "./configs/tasks/zip.js";
+import { ftp } from "./configs/tasks/ftp.js";
 
 // Наблюдатель за изменениями в файлах
 function watcher() {
