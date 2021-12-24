@@ -1,0 +1,32 @@
+.icon {
+	min-width: 1em;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	text-align: center;
+	background-position: 50%;
+	background-repeat: no-repeat;
+}
+.icon:empty:after {
+	visibility: hidden;
+	content: "\00A0";
+}
+
+.icon > img,
+.icon > svg {
+	margin: -5.15em 0 -5em;
+	vertical-align: middle;
+}
+
+.icon.icon_cart {
+	background-image: url("../img/icon/icon_cart.svg");
+	width: 43px;
+	height: 43px;
+}
+
+.icon.icon_burger {
+	mask-image: url("../img/icon/icon_burger.svg");
+	background-color: red;
+	width: 31px;
+	height: 21px;
+}
